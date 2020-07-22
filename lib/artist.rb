@@ -1,10 +1,8 @@
 class Artist
-
   attr_accessor :name, :songs
+  @@all = [] 
 
-  @@all = [] #array of artists instances
-
-  def initialize(name)#artist_name
+  def initialize(name)
     @name = name
     @songs = [] 
   end
